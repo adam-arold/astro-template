@@ -1,0 +1,23 @@
+---
+import { EXTERNAL } from "@data/index";
+
+interface Props {
+    type: "light" | "dark";
+}
+
+const { type } = Astro.props;
+---
+
+<div class="external-nav">
+    <ul>
+        {
+            EXTERNAL.map((item) => (
+                <li>
+                    <a href={item.url} class={`icon-link ${item.id}`}>
+                        <img src={`/icons/${item.id}-${type}.svg`} />
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</div>

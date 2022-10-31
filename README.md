@@ -67,3 +67,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
   }
   ```
 - `npx astro add tailwind`
+- Add paths:
+  ```json
+  "@components/*": ["src/components/*"],
+  "@layouts/*": ["src/layouts/*"],
+  "@lib/*": ["src/lib/*"]
+  ```
