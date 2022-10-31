@@ -1,18 +1,27 @@
 {
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2020,
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
     "overrides": [
         {
             "files": ["*.astro"],
             "plugins": ["astro"],
             "env": {
-                "node": true,
-                "astro/astro": true,
-                "es2020": true
+                "astro/astro": true
             },
             "parser": "astro-eslint-parser",
             "parserOptions": {
                 "parser": "@typescript-eslint/parser",
-                "extraFileExtensions": [".astro"],
-                "sourceType": "module"
+                "extraFileExtensions": [".astro"]
             },
             "rules": {
                 "astro/no-conflict-set-directives": "error",
@@ -21,14 +30,6 @@
         },
         {
             "files": ["**/*.astro/*.js", "*.astro/*.js"],
-            "env": {
-                "browser": true,
-                "es2020": true
-            },
-            "parserOptions": {
-                "sourceType": "module",
-                "ecmaVersion": 2020
-            },
             "rules": {
                 "prettier/prettier": "off"
             }

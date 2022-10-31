@@ -47,3 +47,23 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## Steps
+
+- eslint (https://ota-meshi.github.io/eslint-plugin-astro/user-guide/) + jsx/tsx + js/ts
+- prettier (npm install --save-dev prettier prettier-plugin-astro)
+- lint-staged (npm install lint-staged)
+- husky
+- scripts to rule them all (setup, dev, build)
+- `npx astro add react`
+- `npx astro add mdx`
+  Add mdx to `settings.json`:
+  ```json
+  {
+    "files.associations": {
+      "*.mdx": "markdown"
+    }
+  }
+  ```
+- `npx astro add tailwind`
