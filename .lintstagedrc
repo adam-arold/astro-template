@@ -1,0 +1,6 @@
+{
+  "src/**/*.{ts,tsx,js,mjs,jsx,astro}": [
+    "npx --yes eslint --fix",
+    "npx --yes prettier --write"
+  ]
+}
